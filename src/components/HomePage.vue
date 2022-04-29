@@ -5,7 +5,7 @@
     </header>
     <div id="components-button-demo-button-group">
       <a-button-group>
-        <a-input placeholder="输入仓库名搜索" />
+        <a-input placeholder="输入仓库名搜索" v-model="info" @keyup.enter="gotolink"/>
         <a-button type="primary" @click="gotolink">
             <a-icon type="search" />
         </a-button>
@@ -19,12 +19,16 @@ export default {
   name: 'HomePage',
   data () {
     return {
-      msg: 'Github 仓库搜索 - vuejs'
+      msg: 'Github 仓库搜索 - vuejs',
+      info: ''
     }
   },
   methods: {
     gotolink () {
-      this.$router.push('/warehouse')
+      this.$router.push({
+        name: 'WareHouse',
+        params: {info: this.info}
+      })
     }
   }
 }

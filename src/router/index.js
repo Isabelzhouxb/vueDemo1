@@ -21,7 +21,7 @@ export default new Router({
       // 对应的组件模板
       component: HomePage
     },
-    {path: '/warehouse',
+    {path: '/warehouse/:info',
       name: 'WareHouse',
       component: WareHouse
     }

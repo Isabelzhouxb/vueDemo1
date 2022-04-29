@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div>
     <div class="navigation">
       <div id="components-button-demo-button-group">
           <a-button-group>
