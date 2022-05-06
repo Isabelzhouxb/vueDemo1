@@ -5,13 +5,16 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import App from './App'
 import router from './router'
-import Antd from 'ant-design-vue'
+import { Button, Input, Icon, Avatar } from 'ant-design-vue'
 
-import 'ant-design-vue/dist/antd.css'
+// import 'ant-design-vue/dist/antd.css'
 
 Vue.config.productionTip = false
 
-Vue.use(Antd)
+Vue.use(Button)
+Vue.use(Input)
+Vue.use(Icon)
+Vue.use(Avatar)
 Vue.use(VueAxios, axios)
 /* eslint-disable no-new */
 // 通过npm引入vue，并实例化对象
